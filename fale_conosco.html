@@ -1,0 +1,153 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+<script language="javascript" type="text/javascript">
+function checa_formulario(email){
+if (email.nome.value == ""){
+alert("Por Favor não deixe o seu nome em branco!!!");
+email.nome.focus();
+return (false);
+}
+if (email.empresa.value == ""){
+alert("Por Favor não deixe o seu email em branco!!!");
+email.email_from.focus();
+return (false);
+}
+if (email.email.value == ""){
+alert("não deixe o email destinatario em branco!!!");
+email.email.focus();
+return (false);
+}
+if (email.telefone.value == ""){
+alert("não deixe o assunto em branco!!!");
+email.assunto.focus();
+return (false); 
+}	
+	if (email.mensagem.value == ""){
+alert("não deixe o assunto em branco!!!");
+email.assunto.focus();
+return (false); 
+}	
+}
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>InsfoStella</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/plugins.css" />
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css" /><strong></strong>
+<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#main-navbar">
+
+<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+<div id="menubar" class="main-menu">	
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+                    
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="" /></a>
+</div>
+                    
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html">Home</a></li>
+<li><a href="empresa.html">Empresa</a></li>
+<li><a href="servicos.html">Serviços</a></li>
+<li><a href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
+<li class="active"><a href="fale_conosco.html">Fale Conosco<span class="sr-only">(current)</span></a></li>
+</ul></div></div></nav></div>
+        
+<header id="home" class="sections"></header>
+
+<section id="our-feature" class="sections">
+<form method="post" action="contato_candidato.php" onSubmit="return checa_formulario(this)">
+<div class="container">
+<div class="heading">
+<div class="title text-center arrow-left">
+<h4 class="">Fale Conosco</h4>
+</div></div>
+
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+
+
+
+<label for="nome" class="screen-reader-text">Nome</label><span class="wpcf7-form-control-wrap nome"><input type="text" name="nome" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="nome" aria-required="true" aria-invalid="false" placeholder="Nome" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"></span>
+</div>
+
+<div class="form-group">
+    		<label for="empresa" class="screen-reader-text">Empresa</label><span class="wpcf7-form-control-wrap empresa"><input type="text" name="empresa" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="empresa" aria-required="true" aria-invalid="false" placeholder="Empresa"></span>
+</div>
+    	
+<div class="form-group">
+    		<label for="email" class="screen-reader-text">Email</label><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" id="email" aria-required="true" aria-invalid="false" placeholder="Email"></span>
+
+    	</div>
+    	
+<div class="form-group">
+    		<label for="telefone" class="screen-reader-text">Telefone (DDD-Número)</label><span class="wpcf7-form-control-wrap telefone"><input type="tel" name="telefone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel form-control" id="telefone" aria-invalid="false" placeholder="Telefone (DDD + Número)"></span>
+    	</div>
+    	
+<p></p></div>
+<div class="col-sm-6">
+<div class="form-group">
+<label for="mensagem" class="screen-reader-text">Mensagem</label>
+<span class="wpcf7-form-control-wrap mensagem">
+<textarea name="mensagem" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control contact-form-message" id="mensagem" aria-required="true" aria-invalid="false" placeholder="Mensagem"></textarea></span><br>
+
+<input id="submit" name="submit" type="submit" value="ENVIAR" class="wpcf7-form-control wpcf7-submit button button-lg">
+	
+</div></div></div></div>
+</form>
+
+</section>
+
+<section id="hire-us" class="sections">
+
+<div class="container">  
+<div class="row">
+<div class="col-md-12 col-sm-12 col-xs-12">
+<div class="hire-content">
+<div class="img-overlay">
+<div class="creative-works">
+<h3>End: Av. Pres. Juscelino Kubitschek, 180 (Sétimo andar), Itaim Bibi, São Paulo/SP, 04543-901 <br>Tel: 11 3030-5684</h3>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5215008811774!2d-46.67459268445764!3d-23.58562298467085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5758d0373a43%3A0x1195438fedd74f1b!2sAv.+Pres.+Juscelino+Kubitschek%2C+180!5e0!3m2!1spt-BR!2sbr!4v1508766817338" width="1300" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</div></div></div></div></div></div></div></div></div> 
+ 
+</section>
+
+    
+<footer id="footer" class="footer">
+<div class="container">
+<div class="row">
+<div class="socio-copyright">
+<p>2017 © - Projeto InfoStella - Uninove.</p>
+</div>
+</div>	
+</div>
+</footer>
+
+<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
